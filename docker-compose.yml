@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  server:
+    build: .
+    restart: always
+    ports:
+      - 9012:9012
+    depends_on:
+      - mysqldbb
+  mysqldbb:
+    image: "mysql:5.7"
+    restart: always
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_DATABASE: prueba02
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 12345
+      MYSQL_ROOT_PASSWORD: 12345
+
+
