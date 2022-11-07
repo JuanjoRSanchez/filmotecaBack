@@ -12,7 +12,6 @@ import java.util.Optional;
 @Transactional
 public class RolService {
 
-
     @Autowired
     RolRepository rolRepositories;
 

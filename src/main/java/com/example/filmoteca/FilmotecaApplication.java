@@ -1,5 +1,6 @@
 package com.example.filmoteca;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,6 +10,7 @@ public class FilmotecaApplication {
     public static void main(String[] args) {
         SpringApplication.run(FilmotecaApplication.class, args);
     }
+
 }
 
 

@@ -16,6 +16,7 @@ public class MiConfiguracion {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
+                        .allowedOrigins("https://filmoteca.psycode.es")
                         .allowedMethods("GET", "POST","PUT", "DELETE")
                         .maxAge(3600);
             }
