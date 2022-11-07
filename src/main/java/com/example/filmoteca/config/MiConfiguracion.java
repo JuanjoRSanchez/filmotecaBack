@@ -12,14 +12,22 @@ public class MiConfiguracion {
 
         return new  WebMvcConfigurer() {
 
+
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:9013")
                         .allowedMethods("GET", "POST","PUT", "DELETE")
                         .maxAge(3600);
             }
-
+            /*
+                @Override
+                public void addCorsMappings(CorsRegistry registry) {
+                    registry.addMapping("/**")
+                            .allowedOrigins("http://localhost:9013")
+                            .allowedMethods("GET", "POST","PUT", "DELETE")
+                            .maxAge(3600);
+                }
+            */
 
         };
     }
